@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesquisa Culturama</title>
+    <title>Pesquisa Online</title>
 </head>
 <body>
     <header>
@@ -31,7 +31,7 @@
                     <label for="phone">Telefone</label>
                     <input id="phone" type="tel" name="phone" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen" required>
                     <br>
-                    <label for="Image">Upload de Foto</label>
+                    <label for="Image">Foto de Perfil</label>
                     <input id="Image" type="file" accept="image/*" name="Image" required>
                     <br>
 
@@ -119,6 +119,15 @@
                     <br>
                     <input id="social4" type="checkbox" name="social" value="tiktok">
                     <label for="social4">TikTok</label>
+                    <br>
+                    <label for="MusicStyle">Estilo Musical:</label>
+                    <input list="styletypes" id="musicStyle" name="UserMusicStyle" type="text">
+                    <datalist id="styletypes">
+                        <option value="rock">
+                        <option value="pop">
+                        <option value="Samba">
+                        <option value="Sertanejo">
+                    </datalist>
                 </fieldset>
 
                 <button type="submit">Enviar</button>
