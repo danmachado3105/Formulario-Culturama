@@ -30,6 +30,7 @@ form{
     background-color: white;
     padding: 15px;
     border-radius: 10px;
+    margin-bottom: 100px;
 }
 
 fieldset{
@@ -75,12 +76,39 @@ input[type="color"]{
     padding: 0 5px;
 }
 
-input[type="text"]:invalid,
-input[type="number"]:invalid{
+input:invalid, 
+select:invalid, 
+texterea:invalid{
     border-color: red;
+}
+
+input:valid,
+select:valid, 
+texterea:valid{
+    border-color: green;
 }
 
 p{
     margin-bottom: 15px;
     font-size: 16px;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: white;
+    border: 1px solid rgb(155, 155, 155);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: green;
+    color: white;
+}
+
+button[type="reset"]:hover{
+    background-color: rgb(210, 3, 3);
+    color: white;
 }
