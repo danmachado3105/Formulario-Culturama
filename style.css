@@ -60,6 +60,7 @@ input[type="file"]{
 }
 
 small{
+    color: rgb(31, 31, 31);
     margin-bottom: 20px;
     display: inline-block;
 }
